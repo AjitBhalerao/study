@@ -1,0 +1,73 @@
+1. Why QA?
+Ans: Software Errors costs money to the business.
+The cost associated to fix the bugs after the product is released is very expensive.
+It can cost business to run out of the business.
+Example, 
+ Any error in a life critical devices could cost life and injuries.
+ example: https://en.wikipedia.org/wiki/Therac-25
+ If there are security vulnerabilities, they are dangerous to any business.
+ example: 
+ Target Hit by Credit-Card Breach
+ http://www.wsj.com/articles/SB10001424052702304773104579266743230242538
+
+QA is very important to ensure the business is run correctly, it is more challenging and I am more passionate and would like to build a career in QA.
+
+2. Tell me a situation, where you had requirement that was not testable?
+Tag: Untestable Requirements
+Ans:
+
+3. How would a test a "Text Box" field without knowing any requirements?
+Can you write 5 test cases?
+Tag: Test Case
+Ans:
+
+4. Consider a Microwave, can you write positive & negative test cases?
+Tag: Test Case
+Ans:
+
+5. You are given a WebSite and you "do not" know it's requirements, you have to do thorough testing then what are the checklists?
+Tag: Test Case, Walkthrough, Inspection
+Ans:
+
+6. What is use case? what is the difference between test case & use case.
+Tag: Test Case, Use Case
+Ans:
+
+7. When do you perform function testing? Is it before integration testing?
+Tag: QA Process, Lifecycle, Functional Testing
+Ans:
+
+8. If you have 1000 test cases, how do you recognize they are regression testcases?
+Tag: Regression
+Ans:
+
+9. Explain Bug Life Cycle? Is it difference from STLC?
+Tag: Lifecyle
+Ans:
+
+10. What is walkthrough and inspection?
+Tag: Walkthrough, Inspection.
+Ans:
+
+11. What is difference between test strategy & test plan? 
+Tag: Test Plan
+Ans:
+
+12. Lets say for DMV appointment website, Age is one of the important field, since we don't want to issue license for under age boys or girls.
+If the DMV starts accepting application ignoring the age of the student.
+Write down the bug report, and explan severity and priority of this issue?
+
+13. What you will test as part of build acceptance testing?
+Tag: BAT
+Ans:
+
+14. If there are issue in the software version which is already released to cutomer. What you will do in this case?
+Tag: Bug Report
+Ans:
+
+15: How will you identify a Software?
+Tag: Version
+Ans:
+
+
+
