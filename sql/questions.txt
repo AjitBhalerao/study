@@ -1,0 +1,33 @@
+1. Which SQL database you know?
+Tag: 
+Ans: Oracle 11g
+
+2. What is RDBMS?
+Tag: Basic
+Ans: RDBMS stands for Relation Database Management System.
+Oracle Sql Server and Microsoft SQL Server are type of RDBMS.
+=> invented by IBM (E.F Codd)
+=> it is a software program which manages relational database.
+=> sql is used to access the database.
+=> what is relational database
+=> it is a collection of data items organized as a set of tables.
+=> each table describes what type of data(using multiple columns) and the data itself(represented as row).
+=> In a table, a row is refered to as RECORD and a Column is refered as FIELD
+
+3. What is table?
+Tag: Basic
+Ans: Any data or information is stored as a table in RDBMS. A table has a unique name. Table is comprised of columns and rows.
+     Columns contains column name, data type and any other attributes(Primary or Foriegn Key) of column.
+     Rows contains the record or data for the column. A table can have 0 or more rows.
+     Example:
+     CREATE TABLE CUSTOMERS(ID INT NOT NULL, NAME VARCHAR(20) NOT NULL, AGE INT NOT NULL, PRIMARY KEY(ID));
+
+     INSERT INTO CUSTOMERS(1, "Mithila", 30);
+     INSERT INTO CUSTOMERS(2, "Ajit", 33);
+
+4. Given a employee table which consist as Salary as one of the column, update salary of all employees if everyone gets a raise of 3 %.
+Tag: Query
+Ans:
+
+
+     
