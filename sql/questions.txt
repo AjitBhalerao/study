@@ -30,4 +30,22 @@ Tag: Query
 Ans:
 
 
-     
+5. What is Normalization? Why it is required?
+Ans:
+
+6. What is difference between DROP, DELETE and TRUNCATE?
+Ans:
+
+7. Why there is need of PRIMARY key?
+Ans:
+
+8. What is need for JOIN?
+Ans:
+
+9. What are different types of JOIN?
+Ans:
+
+10. What are VIEWS?
+Ans:
+
+
