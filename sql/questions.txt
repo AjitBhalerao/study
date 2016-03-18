@@ -48,4 +48,62 @@ Ans:
 10. What are VIEWS?
 Ans:
 
+11. Given are below two tables,
+create table test_a(id numeric);
+create table test_b(id numeric);
+
+insert into test_a(id) values
+				(10),
+				(20),
+      				(30),
+        			(40),
+	  			(50);
+insert into test_b(id) values
+	    			(10),
+	      			(30),
+	        		(50);
+Write a query to fetch values in table test_a that are and not in test_b without using the NOT keyword.
+Tag: Query
+Ans:
+
+12.
+Write a SQL query to find the 10th highest employee salary from an Employee table. Explain your answer.
+
+(Note: You may assume that there are at least 10 records in the Employee table.)
+Tag: DISTINCT, TOP, ORDER BY, DESC
+Ans:
+
+SELECT DISTINCT TOP(10) Salary FROM EMPLOYEE ORDER BY Salary Desc
+=> The above query will Salary of top 10 employee arange in descending order
+=> But we need the 10th highest salary
+Final Ans:
+SELECT DISTINCT TOP(1)
+( SELECT DISTINT TOP(10) Salary FROM EMPLOYEE ORDER BY Salary DESC )
+Salary FROM Employee ORDER BY Salary;
+
+The above query will return the 10th highest salaried employee salary.
+
+
+13. What is difference between WHERE and HAVING clause?
+Ans:
+When GROUP BY is not used, the WHERE and HAVING clauses are essentially equivalent.
+
+However, when GROUP BY is used:
+
+The WHERE clause is used to filter records from a result. The filtering occurs before any groupings are made.
+The HAVING clause is used to filter values from a group (i.e., to check conditions after aggregation into groups has been performed).
+
+
+14. What is key difference between DELETE and TRUNCATE?
+Ans:
+Truncate is used to delete table content and the action can not be rolled back, whereas Delete is used to delete one or more rows in the table and can be rolled back.
+
+
+15. Given a table dbo.users where the column user_id is a unique identifier, how can you efficiently select the first 100 odd user_id values from the table?
+    (Assume the table contains well over 100 records with odd user_id values.)
+Ans:
+SELECT TOP 100 user_id FROM dbo.users WHERE user_id % 2 = 1 ORDER BY user_id
+
+
+
 
