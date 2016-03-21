@@ -1,0 +1,25 @@
+QA:
+
+1. Tell me about the company and the application you have tested as study project.
+2. Why did you choose QA?
+3. What is a software development life cycle? Give an example of it stages.
+   Explain each test briefly. At what stage you will join the project?
+4. What doucumentation did you use on the project? IF no documentation, how did you tested?
+5. Define and explain Regression Testing, Build|Acceptance testing. Did you perfom it on your study project? If yes, how?
+6. Explain how did you perform positive and negative testing on your study project. Give an example.
+7. Who assigns and use bug severity and priority? Did you use it on the project?
+8. Write an example of a bug that you found, testing the study project.
+9. Define and explain Test Case. Did you write any test cases on the project.
+10. Write three test cases from your project.
+
+Technical:
+1. What is relational dB? How would you read data from two related tables( explain and give an example)?
+2. What is LEFT JOIN? (Explain and give an example)?
+3. Describe Selenium IDE, Webdriver and Grid. Which one did you use and how?
+4. How would you identify the following element?
+   <inputtype="password" maxlength="8" id="password">
+5. Explain the following code. (Webdriver)
+   WebDriver myTest = new FirefoxDriver();
+   myTest.findElement(By name("first name")).click();
+6. Unix: How to search the file for the keyword?
+7. Or How to search a file by filename or the part of the filename?
