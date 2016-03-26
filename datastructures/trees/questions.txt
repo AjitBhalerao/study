@@ -1,0 +1,33 @@
+1. Write a program to determine height of binary tree?
+Ans:
+Height of the tree
+ The maximum height of a binary tree is defined as the number of nodes along the path from the root node to the deepest leaf node. 
+ Note that the maximum height of an empty tree is 0.
+This is equivalent to Max Depth of the tree.
+Solutions:
+=> Recursive approach
+=> Iterative approach
+
+Recursive approach
+ Basic recursive post order traversal will easily determine the height.
+
+ int GetHeight(Node tree){
+ 	if (tree == null) return 0;
+	int leftHeight = GetHeight(tree.left);
+	int rightHeight = GetHeight(tree.right);
+	return Max(leftHeight, rightHeight) + 1;
+ }
+ 
+ Time Complexity => We have to visit each Node only once.
+ 		 => O(n), n is number of nodes in the tree.
+
+Iterative approach
+ Methods=>
+ a. Inorder traversal: Easy to implement
+ b: Preorder traversal : Easy to implement
+ c: Postorder: Effecient for this problem, since at any given node we know we have already traverse left and right subtree.
+
+File: FindHeight.cs
+
+
+
