@@ -1,0 +1,164 @@
+1. What are the different types of locators in Selenium?
+Ans:
+Locator can be termed as an address that identifies a web element uniquely within the webpage. Thus, to identify web elements accurately and precisely we have different types of locators in Selenium:
+
+ID
+ClassName
+Name
+TagName
+LinkText
+PartialLinkText
+Xpath
+CSS Selector
+DOM
+
+2. What is difference between assert and verify commands?
+Ans:
+Assert: Assert command checks whether the given condition is true or false. Let’s say we assert whether the given element is present on the web page or not. 
+If the condition is true then the program control will execute the next test step but if the condition is false, the execution would stop and no further test would be executed.
+
+Verify: Verify command also checks whether the given condition is true or false. Irrespective of the condition being true or false, the program execution doesn’t halts i.e. any failure during verification would not stop the execution and all the test steps would be executed.
+
+3. What are the limitations of Selenium?
+Ans:
+Following are the limitations of Selenium:
+
+Selenium supports testing of only web based applications
+Mobile applications cannot be tested using Selenium
+Captcha and Bar code readers cannot be tested using Selenium
+Reports can only be generated using third party tools like TestNG or Junit.
+As Selenium is a free tool, thus there is no ready vendor support though the user can find numerous helping communities.
+User is expected to possess prior programming language knowledge.
+
+4. What are the testing types that can be supported by Selenium?
+Ans:
+Selenium supports the following types of testing:
+
+Functional Testing
+Regression Testing
+
+5. What is an Xpath?
+
+Ans:
+Xpath is used to locate a web element based on its XML path. XML stands for Extensible Markup Language and is used to store, organize and transport arbitrary data. 
+It stores data in a key-value pair which is very much similar to HTML tags. Both being markup languages and since they fall under the same umbrella, Xpath can be used to locate HTML elements.
+
+The fundamental behind locating elements using Xpath is the traversing between various elements across the entire page and thus enabling a user to find an element with the reference of another element.
+
+6. What is the difference between “/” and “//” in Xpath?
+Ans:
+
+Single Slash “/” – Single slash is used to create Xpath with absolute path i.e. the xpath would be created to start selection from the document node/start node.
+
+Double Slash “//” – Double slash is used to create Xpath with relative path i.e. the xpath would be created to start selection from anywhere within the document.
+
+7. How do I launch the browser using WebDriver?
+Ans:
+The following syntax can be used to launch Browser:
+WebDriver driver = new FirefoxDriver();
+WebDriver driver = new ChromeDriver();
+WebDriver driver = new InternetExplorerDriver();
+
+8.  What are the different types of waits available in WebDriver?
+Ans:
+There are two types of waits available in WebDriver:
+
+Implicit Wait
+Explicit Wait
+Implicit Wait: Implicit waits are used to provide a default waiting time (say 30 seconds) between each consecutive test step/command across the entire test script. Thus, subsequent test step would only execute when the 30 seconds have elapsed after executing the previous test step/command.
+
+Explicit Wait: Explicit waits are used to halt the execution till the time a particular condition is met or the maximum time has elapsed. Unlike Implicit waits, explicit waits are applied for a particular instance only.
+
+9. How to type in a textbox using Selenium?
+
+User can use sendKeys(“String to be entered”) to enter the string in the textbox.
+
+Syntax:
+WebElement username = drv.findElement(By.id(“Email”));
+// entering username
+username.sendKeys(“sth”);
+
+10. How can you find if an element in displayed on the screen?
+
+WebDriver facilitates the user with the following methods to check the visibility of the web elements. These web elements can be buttons, drop boxes, checkboxes, radio buttons, labels etc.
+
+isDisplayed()
+isSelected()
+isEnabled()
+Syntax:
+
+isDisplayed():
+boolean buttonPresence = driver.findElement(By.id(“gbqfba”)).isDisplayed();
+
+isSelected():
+boolean buttonSelected = driver.findElement(By.id(“gbqfba”)).isDisplayed();
+
+isEnabled():
+boolean searchIconEnabled = driver.findElement(By.id(“gbqfb”)).isEnabled();
+
+11. How can we get a text of a web element?
+
+Get command is used to retrieve the inner text of the specified web element. The command doesn’t require any parameter but returns a string value. It is also one of the extensively used commands for verification of messages, labels, errors etc displayed on the web pages.
+
+Syntax:
+String Text = driver.findElement(By.id(“Text”)).getText();
+
+12.  How to select value in a dropdown?
+
+Value in the drop down can be selected using WebDriver’s Select class.
+
+Syntax:
+
+selectByValue:
+Select selectByValue = new Select(driver.findElement(By.id(“SelectID_One”)));
+selectByValue.selectByValue(“greenvalue”);
+
+selectByVisibleText:
+Select selectByVisibleText = new Select (driver.findElement(By.id(“SelectID_Two”)));
+selectByVisibleText.selectByVisibleText(“Lime”);
+
+selectByIndex:
+Select selectByIndex = new Select(driver.findElement(By.id(“SelectID_Three”)));
+selectByIndex.selectByIndex(2);
+
+13. What are the different types of navigation commands?
+Ans:
+Following are the navigation commands:
+navigate().back() – The above command requires no parameters and takes back the user to the previous webpage in the web browser’s history.
+
+Sample code:
+driver.navigate().back();
+
+navigate().forward() – This command lets the user to navigate to the next web page with reference to the browser’s history.
+
+Sample code:
+driver.navigate().forward();
+
+navigate().refresh() – This command lets the user to refresh the current web page there by reloading all the web elements.
+
+Sample code:
+driver.navigate().refresh();
+
+navigate().to() – This command lets the user to launch a new web browser window and navigate to the specified URL.
+
+Sample code:
+driver.navigate().to(“https://google.com”);
+
+14. How to assert title of the web page?
+
+//verify the title of the web page
+assertTrue(“The title of the window is incorrect.”,driver.getTitle().equals(“Title of the page”));
+
+15.  How to click on a hyper link using linkText?
+Ans:
+driver.findElement(By.linkText(“Google”)).click();
+
+The command finds the element using link text and then click on that element and thus the user would be re-directed to the corresponding page.
+
+The above mentioned link can also be accessed by using the following command.
+
+driver.findElement(By.partialLinkText(“Goo”)).click();
+
+The above command find the element based on the substring of the link provided in the parenthesis and thus partialLinkText() finds the web element with the specified substring and then clicks on it.
+
+
