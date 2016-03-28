@@ -14,37 +14,135 @@ QA is very important to ensure the business is run correctly, it is more challen
 
 2. Tell me a situation, where you had requirement that was not testable?
 Tag: Untestable Requirements
-Ans:
+Ans: Most of the times I found non-functional requirements untestable.
+	For example, Performace Requirements - Application shall not crash during some operation.
 
 3. How would a test a "Text Box" field without knowing any requirements?
 Can you write 5 test cases?
 Tag: Test Case
-Ans:
-
+Ans: I would divide my test cases into,
+	 Leave it blanks
+     Boundary value analysis
+	 Special Characters - (@,+,&^)
+	 Does it accept spaces?
+	 Enter only numbers.
+	 
 4. Consider a Microwave, can you write positive & negative test cases?
 Tag: Test Case
-Ans:
+Ans:Positive: 
+	1. Does it turn On and Off?
+	2. Does the timer automatically turns off?
+	3. Can we stop microwave, it is on?
+	4. Test Auto Frost, Light, Time, functionality.
+	Negative:
+	1. turn on microwave and unplug the power cable.
+	2. maximum timer limit 
+	3. 
 
 5. You are given a WebSite and you "do not" know it's requirements, you have to do thorough testing then what are the checklists?
 Tag: Test Case, Walkthrough, Inspection
 Ans:
+Checklists:
+a. Functional
+b. Usability
+c. Interface
+d. Compatibility
+e. Performace
+f. Security Testing
 
+a. Functional Testing (Website)
+=> check all links on the web site
+=> are all the links refer to correct webpage
+=> Test all the Forms => does they work accordingly
+=> Cookies => Disable cookies and test the website
+           => Enable cookies and test the website
+	Validate your HTML/CSS:
+	=> Mainly validate the site for HTML syntax errors.
+	Database testing:
+	=> Check for data integrity and errors while you edit, delete, modify the forms or do any DB related functionality.
+	=> Check if all the database queries are executing correctly, data is retrieved correctly and also updated correctly.
+b. Usability Testing:
+	Test for navigation:
+	=> Web site should be easy to use. Instructions should be provided clearly. 
+	=> Check if the provided instructions are correct means whether they satisfy purpose.
+	=> Main menu should be provided on each page. It should be consistent
+	Content Checking:
+	=> Content should be logical and easy to understand. Check for spelling errors.
+	=> Fonts, Color, Images (Visibility and size), Anchor Text.
+c. Interface Testing:
+	The main interface are Web Server & Database Server interface
+	=> Check if any connection between browser and Web Server is reset in between any request?
+	=> Check if what happens if user cancels any request?
+	=> Check for all the expected error and if they are displayed correctly to end user.
+d. Compatibility Testing
+	Browser Compatibility:
+	=> Application may be very tightly coupled to some browser.
+	=> Every browser have different configuration and security settings.
+	=> Test web application on IE, Firefox, Chrome, Safari, Opera, Netscape.
+	Operating System Compatibility:
+	=> All new technologies used in web development like graphics designs, interface calls like different API’s may not be available in all Operating Systems
+	=> Test web application on different os like windows, mac os, linux.
+	Mobile Browsing:
+	=> Test web application on different mobile platform.
+	Printing options:
+	=> If you are giving page-printing options then make sure fonts, page alignment, page graphics getting printed properly. 
+	=> Pages should be fit to paper size or as per the size mentioned in printing option.
+e. Performance Testing:
+	=> Application should sustain to heavy load.
+	Web Load Testing:
+	=> Test application on different internent speeds.
+	=> Check how does application responds if there are many users accessing the same page of the application.
+	Stress Testing:
+	=> Stress means stretching beyond the system specification limit.
+	=> Does the system works if there is lot of load on the application. 
+	=> Does it recover if the sytems crashes.
+e. Security:
+	=> All transactions, error messages, security breach attempts should get logged in log files somewhere on web server.
+	
+	
 6. What is use case? what is the difference between test case & use case.
 Tag: Test Case, Use Case
-Ans:
+Ans: 
+	Use Case:
+	=> defines interaction between <Actor> and a <System>
+	=> in case of ATM machine, <Actor> is user, <System> is ATM
+	=> usually a <system> consists of multiple use cases, example for ATM system are withdraw fund, account inquiry, deposit cash, etc.
+	Test Case:
+	=> when a test case is associated with a use-case, usually we are doing end-end system testing.
+	=> such test cases validates the system. [from user prespective][Validation Testing.]
+	
 
-7. When do you perform function testing? Is it before integration testing?
+7. When do you perform functional testing? Is it before integration testing?
 Tag: QA Process, Lifecycle, Functional Testing
-Ans:
+Ans: 
+	Functional Testing:
+	=> It is performed first.
+	=> Functional Test are performed to verify the system against the System Requirement specification.
+	Integration Testing:
+	=> integration testing is a type of functional testing.
+	=> usually a System consists of many sub-systems.
+	=> in integration testing we test more than one sub-system and how they function properly.
+	
 
 8. If you have 1000 test cases, how do you recognize they are regression testcases?
 Tag: Regression
 Ans:
+	Regression Testing:
+	=> Usually perform whenver a bug is fixed
+	=> Or a new feature is added to existing system.
+	=> in regression testing we execute existing test cases to ensure that there are no new issue's introduced due this changes.
+	=> in this case, we have to identify which all test cases identify for regression, usually developer creates the impact analysis document.
 
 9. Explain Bug Life Cycle? Is it difference from STLC?
 Tag: Lifecyle
 Ans:
-
+	Bug life cycle:
+	=> every bug we create, goes through different state in a project.
+	=> when we create the bug, we will have a "new" bug. [state: new]
+	=> when we review the bug. [state: review]
+	=> when developer fixes the bug, developer marks this bug as fixed. [state: fixed]
+	=> the state of bug can be represented using bug life cycle.
+	
 10. What is walkthrough and inspection?
 Tag: Walkthrough, Inspection.
 Ans:
@@ -52,6 +150,20 @@ Ans:
 11. What is difference between test strategy & test plan? 
 Tag: Test Plan
 Ans:
+	Test Plan:
+	=> A test plan for software project can be defined as a document that defines the scope, objective, approach and emphasis on a software testing effort
+	=> Components of Test plan include- Test plan id, features to be tested, test techniques, testing tasks, features pass or fail criteria, test deliverables, responsibilities, and schedule, etc.
+	=> Test plan is carried out by a testing manager or lead that describes how to test, when to test, who will test and what to test
+	=> Test plan narrates about the specification
+	=> Test plan can change
+	=> Test planning is done to determine possible issues and dependencies in order to identify the risks
+	Test Startegy:
+	=> Test strategy is a set of guidelines that explains test design and determines how testing needs to be done
+	=> Components of Test strategy includes- objectives and scope, documentation formats, test processes, team reporting structure, client communication strategy, etc.
+	=> A test strategy is carried out by the project manager. It says what type of technique to follow and which module to test
+	=> Test strategy narrates about the general approaches
+	=> Test strategy cannot be changed
+	=> It is a long-term plan of action.You can abstract information that is not project specific and put it into test approach
 
 12. Lets say for DMV appointment website, Age is one of the important field, since we don't want to issue license for under age boys or girls.
 If the DMV starts accepting application ignoring the age of the student.
@@ -59,15 +171,31 @@ Write down the bug report, and explan severity and priority of this issue?
 
 13. What you will test as part of build acceptance testing?
 Tag: BAT
-Ans:
+Ans: => Usually we will identify subset of test cases which are must to approve the build.
+	 => We will run this test cases as part of BAT.
+	 => if a test case fails, we will reject the build.
 
 14. If there are issue in the software version which is already released to cutomer. What you will do in this case?
 Tag: Bug Report
-Ans:
+Ans: => We have to create bug report for the known issues.
+	 => Every system released to customer has a "Release document"
 
 15: How will you identify a Software?
 Tag: Version
+Ans: By looking at the version of the software.
+	 iOS => 9.1, 9.2, 9,3
+	 Android => 
+
+16: What is difference between STLC and SDLC?
 Ans:
-
-
+	STLC is software test life cycle it starts with
+	=> Preparing the test strategy.
+	=> Preparing the test plan.
+	=> Creating the test environment.
+	=> Writing the test cases.
+	=> Creating test scripts.
+	=> Executing the test scripts.
+	=> Analyzing the results and reporting the bugs.
+	=> Doing regression testing.
+	=> Test exiting.
 
