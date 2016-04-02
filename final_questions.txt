@@ -1,21 +1,136 @@
 QA:
 
 1. Tell me about the company and the application you have tested as study project.
+Ans: 
+The application we tested as a study project was EventEzyGo. This application is developed by company ShareVgo LLC.
+ShareVgo LLC is Santa Clara, California based company started in Jun 25, 2015. 
+
+EventEzyGo is a Social Networking application which makes events fun and easy.
+Following are the few features of EventEzyGo,
+1. allows to host and join events.
+2. allows to search places/restaurants by specify the location.
+3. we can share events on Facebook, Twitter, WhatsApp, Line and others.
+4. event reminder are integrated with Phone's Calender.
+5. it allows users to manage share rides for events.
+
+EventEzyGo application is available for both Android and iPhone devices. 
+It is a native application, available on Google's Play Store and Apple's AppStore.
+
+What you did in EventEzyGo?
+Ans:
+	As part of EventEzyGo project, I was involved in test planning and test execution phases.
+	We identified the environment on which the testing will be perfomed, bug report format to log the bug, bug reporting tool (BugZilla).
+	we did exploratory testng,
+	we did regression testing by executing the test cases that were already created.
+	we performed smoke testing,bug verification,
+	wrote test cases for explore component
+	reported bugs in bugzilla. we performed Usability testing by how easy the use of application is. 
+	did localization testing. 
+
+
+	
 2. Why did you choose QA?
+Ans: 
+  QA is a very challenging job, sometimes it involves approaches which are not straight forward to break the system.
+  After completing my BE, I did a course in Software Testing, after completing the course I was very much interested in QA.
+
 3. What is a software development life cycle? Give an example of it stages.
    Explain each test briefly. At what stage you will join the project?
-4. What doucumentation did you use on the project? IF no documentation, how did you tested?
-5. Define and explain Regression Testing, Build|Acceptance testing. Did you perfom it on your study project? If yes, how?
+Ans:
+	
+4. What documentation did you use on the project? If no documentation, how did you tested?
+Ans: No, we did not received any documents regarding EventEzyGo application.
+	Our Supervisor provided a document which detailed out our approach for testing.
+	This document has following details,
+	1. Description of Test Environment
+	2. Tools for reporting bugs - BugZilla
+	3. Format of Bug Report
+	4. A checklist for EventEzyGo application.
+	4. The entire EventEzyGo testing was break down to number of Assignments based on the feature.
+	   For example, Exploratory Testing, Compatibility Testing, Integration Testing,
+	   (Signup, login, profile setting)
+	5. Release Notes: 
+		- This was required to perform regression testing of EventEzyGo application.
+	
+
+5. Define and explain Regression Testing, Build or Acceptance testing. Did you perfom it on your study project? If yes, how?
+Ans:
+	Regression Testing:
+	=> Usually perform whenver a bug is fixed
+	=> Or a new feature is added to existing system.
+	=> in regression testing we execute existing test cases to ensure that there are no new issue's introduced due to this changes.
+	=> as part of this task, we identify which are test cases qualified for regression, usually it is decided by Software Manager based on the impact of the change.
+	Build Acceptance Testing:
+	=> checks if the new build is acceptable for further testing.
+	=> in a system, a set of test cases are identified which captures the most important functionality of the system. 
+	=> as part of BAT, we execute this test cases.
+	=> if a test case fails, we will reject the build.
+	Yes, I did performed regression testing for EventEzyGo application. 
+	I performed regression testing based on the release note. The feature for which I was doing regression was Signup.
+	
+	 
 6. Explain how did you perform positive and negative testing on your study project. Give an example.
+Ans:
+	Positive Testing:
+	It is performed to verify that the system meets requirement specification. It checks all the happy path of the system.
+	Usually as part of this testing we test system by providing valid data as input.
+	
+	Negative Testing:
+	As part of this testing, we provide invalid data to the system. It checks whether the system behaves as expected on invalid input.
+	
+	For my study project EventEzyGo application we have requirement for Signup page for User First Name,
+	 Max Length is 40
+	 No limitation, no preceding spaces or blanks allowed.
+	 Copy and paste allowed.
+	
+	Based on the above requirement of "First User Name", I performed following test cases
+	Positive:
+	 1. enter all upper case letter, "ABCDEFGH"
+	 2. enter all lower case letters "abcdefgh"
+	 3. enter only numbers "123456789"
+	 5. enter special characters "&*()%#@!~"
+	Negative:
+	 1. enter characters more than 40, "afkjsadfas....."
+	 2. enter spaces in between user name. "asdf asdf asdfsad "
+	 3. leave "First Name" empty.
+	 4. enter only spaces in user name. "         "
+	 
+		
 7. Who assigns and use bug severity and priority? Did you use it on the project?
+Ans:
+    It depends entirely on the size of the company. Severity tells us how bad the defect is. Priority tells us how soon it is desired to fix the problem.
+	In some companies, the defect reporter sets the severity and the triage team or product management sets the priority. 
+	In a small company, or project (or product), particularly where there aren't many defects to track, 
+	you can expect you don't really need both since a high severity defect is also a high priority defect.
+	For my study project (EventEzyGo),
+	As part of the bug report, I have filled the value of Severity only. We did not filled Priority value.
+	
 8. Write an example of a bug that you found, testing the study project.
+Ans:
+	
+
 9. Define and explain Test Case. Did you write any test cases on the project.
+
+
 10. Write three test cases from your project.
+
 
 Technical:
 1. What is relational dB? How would you read data from two related tables( explain and give an example)?
+Ans:
+	Relational dB
+	=> it is a collection of data items organized as a set of tables
+	=> each table describes what type of data(using multiple columns) and the data itself(represented as row).
+	=> it is invented by IBM.
+	Reading data from two related tables.
+	
+	
 2. What is LEFT JOIN? (Explain and give an example)?
+Ans:
+
 3. Describe Selenium IDE, Webdriver and Grid. Which one did you use and how?
+Ans:
+
 4. How would you identify the following element?
    <inputtype="password" maxlength="8" id="password">
 5. Explain the following code. (Webdriver)
