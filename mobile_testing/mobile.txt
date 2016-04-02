@@ -1,0 +1,135 @@
+
+Mobile Application Types. 
+○ Native mobile application   
+○ Mobile WEB application  
+○ Hybrid mobile app   (examples: Twitter, Yelp, Netflix)                     
+
+What is the difference between a native and a Mobile Web app?
+A native mobile app is specifically designed and implemented to run on a device’s 
+operating system and machine firmware, and typically needs to be adapted for different devices.
+­ xCode­ Objective­C based integrated development environment (IDE) for OS x and 
+­ Android Studio ­ Java based integrated development environment (IDE) for Android platform
+­ Visual Studio/C# for Windows Phone. 
+That means you must rewrite application for each of the device[mobile platform].
+Example of native apps are, 
+- games app.
+- calender
+- Messenger (SMS)
+- Photo Gallery
+- Email Apps
+
+A Mobile Web app, or browser application, 
+- every time u run the app, the contents are downloaded from Web.
+- requires internet connection all the time.
+- built using cross platform web technologies(HTML5, CSS, Javascript) 
+- it can usually be accessed from all Web­capable mobile devices.
+- Runs on common Browsers (Greater compatibility)
+- Server side app (requires constant connection)
+- Low development cost, less support
+Examples: Restaurants, Retails and Shopping, News and Communications, Weather Publishers 
+
+Hybrid Apps:
+- It is developed using both native code(above point) and cross platform technologies.
+- Business logic is implemented using cross platform web technologies(HTML5, CSS, Javascript).
+- For each mobile platform, a different host is written using platform code
+   xCode­ Objective­C based integrated development environment (IDE) for OS x and 
+   Android Studio ­ Java based integrated development environment (IDE) for Android platform
+   Visual Studio/C# for Windows Phone. 
+- Hybrid apps are distributed in the app store.
+Examples,
+- twitter
+- yelp
+- netflix
+- kindle
+
+Techinuques of testing Mobile Application
+- Manual Testing
+- Testing using Emulators/Simulators
+- Performance Testing (Automated Testing)
+
+General Testing type:
+- User Interface Testing: Color scheme, Menu styles, Consistency of UI over various Devices
+- Usability Testing
+- Functional Testing: Core functionality
+- Performance & Stress Testing: Behavior of Mobile Application in Low resources (Memory/Space/Battery), Behavior of mobile website when many mobile user simultaneously access mobile website
+- Security Testing: authentication and authorization, data security, allocation of data in offline mode, protection of the file system, options, hardware, network resources, etc.
+- Compatibility: To make sure your application is not hampering native device functionality
+Mobile Specific Testing:
+nterruption Testing:
+- Voice Calls, SMS, Charger, Low memory Notification while application is running.
+- Soak Testing (Random Event Generator) :
+  Continual key pad entries via tools to test application stability with various key press events.
+- Low Network/No Network case Testing:
+- Application behavior when there is no network coverage or   Low network strength.
+
+Native Vs Mobile Web App Testing
+1. Native App Preinstalled or Downloaded
+     - Device Compatibility
+     - Device and Software Integration
+     - Data Processing and Integration
+	 - Emulator-based testing          
+2. Mobile Web App:
+     - Browser Compatibility
+     - HTML5 support
+     - JS standards   
+
+Emulators
+An emulator is a software replica of an actual mobile device (or a software compatible with non-native environment ). 
+	The emulator simulates the mobile device and lets you develop and test Android applications without using a physical device. 
+	Emulators Types:
+Device emulators
+	BlueStacks – BlueStacks App Player lets you run mobile apps fast and full screen on Windows and Mac
+	 Genymotion is a fast, easy to use and powerful Android emulator 
+	Android SDK includes a mobile device emulator — a virtual mobile device (AVD) that runs on your PC
+Browser emulator
+     Mobile browser emulator https://chrome.google.com/webstore/detail/mobile-browser-emulator/lbofcampnkjmiomohpbaihdcbjhbfepf?hl=en
+Advantages:
+- cost-effective because most of them are freeware.
+- can maintain the original look, feel, and behavior of the physical device
+- provide screenshots, high-level information, and data messages. 
+- reduce development and testing efforts and miscommunication 
+- content compatibility tests – such as verifying image sizes or identifying broken links – can be accurately and quickly performed. 
+
+
+Mobile Project (Common Tasks)
+a. Testing environments and app versions(modes):
+(Hardware, OS, Networking, DB, Mail and WEB Servers) and application mode:
+● Production Env   – Live (Beta)/Production release  
+	– Open for users/public and Testers!!!!!;
+	– Release Candidate/Pre­Production release/build 
+	– Open for Testers before general release.
+● QA/Staging Env          
+	– QA build / Pre­Production/Alfa/       
+	– Open for testers
+● Development Env 
+	– Dev build
+	
+b. Bug Tracking System
+	Bugzilla:
+	URL:         http://bugzilla.portnov.com
+	User ID:     event­jan­6@school.com   
+	PW:          event­jan­6
+	
+c. BUG REPORT STRUCTURE 
+	­ Bugzilla Component based format:
+		=> Log File attachment
+		=> Android OS ­ alogcat App from Play Store
+		=> iOS 9  (crash log and console log files) 
+			1. From device ­ crash log only
+			1) Open Settings app
+			2) Go to Privacy, then Diagnostics & Usage
+			3) Select Diagnostics & Usage Data
+			4) Locate the log for the crashed app. The logs will be named in the format: <AppName>_<DateTime>_<DeviceName>
+			5) Select the desired log. Then, using the text selection UI select the entire text of the log. Once the text is selected, tap Copy
+			6) Paste the copied text to Mail and send to an email address as desired
+			
+
+Project: EventEzyGo app
+Platform: Android, iOS
+About EventEzyGo: 
+- Family members chat and location tracker app
+- it allows to host, coordinate event and allows to join event as well.
+- it is powerful and simple enough to plan, host and join any events
+- it provides free ride sharing platform, so that event joining is easy.
+
+				
